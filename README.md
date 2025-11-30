@@ -1,6 +1,11 @@
 E-Candle simple battery care board
 ==================
 
+<div class="grid" markdown>
+<img src=res/candles.jpg width="51%" >
+<img src=res/three_states_of_candle.jpg width="45%" >
+</div>
+
 The project
 ------------------
 
@@ -31,10 +36,25 @@ capable of 0.4 uA current consumption in power down mode.
 It can provide 20 mA per pin, which is not enough, but 4 pins in parallel
 should be OK.
 
+![schematics](res/schematics.png)
+
+Hardware assembly
+------------------
+
 These boards have a LED wired to VCC, so I desoldered it to achieve the low shutdown current.
 
 So, here are electronic components (li-ion batteries not included):
 ![chargers and MCU boards](res/chargers_and_mcus.jpg)
+
+The battery compartment lid has a cut for a pull-off transportation label. I expanded it
+to fit USB-C connector of a charger board. The charger board itself is secured _somehow_ inside
+by a hot glue and some pieces of plastic (I used USB-A connectors as a source of plastic here).
+
+A Li-Ion battery and STC8 module are held inside by an adhesive tape or more hot glue.
+<div class="grid" markdown>
+<img src=res/candle_hw_overview.jpg width="55%" >
+<img src=res/stc_in_candle.jpg width="42%" >
+</div>
 
 STC8 stuff
 ------------------
